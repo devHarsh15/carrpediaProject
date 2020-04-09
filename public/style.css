@@ -1,0 +1,119 @@
+* {
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cabin', sans-serif;
+}
+
+.main {
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+    color: #fff;
+}
+.main .background-img {
+    background-image: url(https://i.pinimg.com/originals/57/a6/db/57a6db5a83286e8774e76279f8a3b254.jpg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    z-index: -1;
+    background-color: black;
+}
+.main-content {
+    font-family: 'Kanit', sans-serif;
+    opacity: 0;
+    margin-top: 50px;
+    animation-name: fadein;
+    animation-duration: 0.7s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+.main-content #company {
+    font-size: 62px;
+    padding-bottom: 10px;
+}
+.main-content #scroll {
+    font-size: 20px;
+    animation-name: flick;
+    animation-duration: 0.6s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@keyframes fadein {
+    0%{
+        animation-delay: 1.2s;
+    }
+    100%{
+        opacity: 1;
+        margin-top: 0;
+    }
+}
+
+@keyframes flick {
+    25%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1);
+    }
+    60%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.05);
+    }
+}
+
+.col-md-6 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.col-md-6 img {
+    width: 120px;
+    height: 110px;
+}
+.col-md-6 h3 {
+    color: rgb(136, 136, 136);
+    letter-spacing: 0.2px;
+    font-size: 20px;
+}
+
+.thumbnail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+}
+.thumbnail:hover {
+    transform: scale(1.04);
+    transition: all 0.2s linear;
+    animation-direction: alternate;
+}
+.thumbnail img {
+    width: 190px;
+    height: 140px;   
+}
+.caption a{
+    text-decoration: none;
+    color: rgb(27, 27, 27);
+    font-size: 20px;
+}
