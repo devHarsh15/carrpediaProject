@@ -117,3 +117,10 @@ section {
     color: rgb(27, 27, 27);
     font-size: 20px;
 }
+
+#table {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
