@@ -1,5 +1,10 @@
 <%- include ("partials/header.ejs") %> 
-
+<style>
+ img:hover {
+transition: transform .2s;
+ transform: scale(1.5);
+}
+</style>
 <div style="margin: 0 0px;" class="container">
     <div style="display: flex; flex-direction: row; align-items: center;" class="row">
         <div class="col-md-2">
@@ -10,7 +15,7 @@
         </div>
         <div class="col-md-10">
             <div style="display: flex; flex-direction: row; align-items: center;" class="page-header">
-                <img id="ferraribg" style="width: 170px; height: 120px;" src="assets/ferrari.png" alt="">
+              <img id="ferraribg" style="width: 170px; height: 120px;" src="assets/ferrari.png" alt="">
                 <h1>Ferrari</h1>
             </div>
         </div>
@@ -28,7 +33,7 @@
                 Throughout its history, the company has been noted for its continued participation in racing, especially in Formula One, where it is the oldest and most successful racing team, holding the most constructors championships (16) and having produced the highest number of drivers' championship wins (15).[12] Ferrari road cars are generally seen as a symbol of speed, luxury and wealth.[13]
             </p>
         </div>
-        <div style="padding: 0;" class="col-md-3">
+        <div id="table" class="col-md-3">
             <table class="table">
                 <thead>
                     <img style="width: 190px; height: 140px;" src="assets/ferrari.png" alt="">
@@ -97,4 +102,3 @@
 </div>
 
 <%- include ("partials/footer.ejs") %> 
-
