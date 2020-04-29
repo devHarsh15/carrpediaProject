@@ -9,3 +9,5 @@ What does it have?
 -Bootstrap.
 -AJAX and promises for single-page data handling.
 -NodeJS for handling server side routing
+
+*CURRENTLY, WE ARE WORKING ON THE AUTHENTICATION PART AS WELL.
