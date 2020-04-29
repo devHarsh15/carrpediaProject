@@ -11,3 +11,5 @@ What does it have?
 -NodeJS for handling server side routing
 
 *CURRENTLY, WE ARE WORKING ON THE AUTHENTICATION PART AS WELL.
+
+YOU CAN CHECK THE LIVE SITE ON: https://gentle-hollows-00674.herokuapp.com/
