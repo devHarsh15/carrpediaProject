@@ -97,18 +97,18 @@ section {
     font-size: 20px;
 }
 
-.thumbnail {
+#showcase {
     display: flex;
     flex-direction: column;
     align-items: center;
     border: none;
 }
-.thumbnail:hover {
+#showcase:hover {
     transform: scale(1.04);
     transition: all 0.2s linear;
     animation-direction: alternate;
 }
-.thumbnail img {
+#showcase img {
     width: 190px;
     height: 140px;   
 }
@@ -123,4 +123,67 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+#submit {
+    width: 200px;
+    outline: none;
+    background: none;
+    border: 3px solid rgb(42, 206, 42);
+    border-radius: 10px;
+    color: rgb(92, 91, 91);
+}
+#submit:hover {
+    transform: scale(1.03);
+    transition: all 0.1s linear;
+}
+
+.scrollable {
+    height: 200px;
+    width: 400px;
+    overflow-y: auto;
+}
+
+.form {
+    display: flex;
+    flex-direction: row;
+}
+
+#galleryexplore {
+    background: none;
+    border: 2px solid rgba(228, 231, 34, 0.863);
+    color: rgba(228, 231, 34, 0.863);
+}
+#galleryjumbo {
+    background-image:  url(https://wallpaper-house.com/data/out/21/wallpaper2you_9711.jpg);
+    background-size: cover;
+    background-position: center;
+    animation-name: change;
+    height: 300px;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+@keyframes change {
+    20%{
+        background-image: url(https://images.hdqwalls.com/download/lamborghini-aventador-svj-2019-4k-pa-1920x1080.jpg);
+    }
+    40%{
+        background-image: url(https://wallpaperaccess.com/full/1152674.jpg);
+    }
+    60%{
+        background-image: url(https://wallpapertag.com/wallpaper/full/e/b/f/666078-free-laferrari-wallpapers-1920x1080-ipad-pro.jpg);
+    }
+    80%{
+        background-image: url(https://s1.1zoom.me/b5050/219/Ferrari_2015_Ferrari_F12_471316_1920x1080.jpg);
+    }
+    100%{
+        background-image: url(https://i.pinimg.com/originals/a2/62/33/a262334619af167daa6743066b9c903a.jpg);
+    }
+}
+
+#ss {
+    word-wrap: break-word;
 }

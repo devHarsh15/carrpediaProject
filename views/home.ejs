@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
@@ -48,12 +49,61 @@
             </div>
         </div>
     </div>
+    <div id="galleryjumbo" class="jumbotron">
+        <div class="container">
+            <div style="display: flex; flex-direction: row; align-items: center;" class="row">
+                <div class="col-md-9">
+                    <div style="margin-top: 0;" class="page-header">
+                        <h2>CarrGallery.</h2>
+                    </div>
+                    <p>CarrGallery is an awesome place for you to access loads of full HD pictures of your favourite cars. You can view or save them, and once registered, you can also post your own pictures and contribute to our gallery as well!</p>
+                </div>
+                <div class="col-md-3">
+                    <a href="/gallery" id="galleryexplore" class="btn btn-warning btn-lg ">Explore now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="jumbotron">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div style="margin-top: 0;" class="page-header">
+                        <h2><small>Introducing </small>CarrSuggest.</h2>
+                    </div>
+                    <p style="text-align: left;">CarrSuggest is simply a suggestion box, where users can contribute and help us grow by giving their suggestions and reviews
+                        on the content of the website. You can suggest us what can else be done to improve CarrPedia, and we will do our best to implement
+                        your suggestion. 
+                     </p>
+                </div>
+                <div class="col-md-6">
+                    <div style="display: flex; flex-direction: column; align-items: center;" class="container">
+                        <h2>CarrSuggest</h2>
+                        <div  class="scrollable">
+                            <table class="table">
+                                <thead>
+                                   <h4>Add you suggestions here.</h4> 
+                                </thead>
+                                <tbody class="suggestbody">
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                        <section class="form">
+                            <input id="writeop" style="margin: 5px;" class="form-control text-center" type="text" placeholder="write your suggestions">
+                            <button id="addop" style="margin: 5px;" class="btn btn-danger">Submit</button>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <h1 class="text-center" style="color: rgb(62, 62, 233);">All Brands</h1>
     <br>
     <div class="container">
         <div class="row">
             <div class="col-md-3">
-                <div class="thumbnail">
+                <div id="showcase" class="thumbnail">
                     <img style="width: 130px; height: 130px;" src="assets/bmw.png" alt="">
                     <br>
                     <div class="caption">
@@ -62,7 +112,7 @@
                 </div>
             </div>
             <div class="col-md-3">
-                <div class="thumbnail">
+                <div id="showcase" class="thumbnail">
                     <img src="assets/ferrari.png" alt="">
                     <br>
                     <div class="caption">
@@ -70,8 +120,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
-                <div class="thumbnail">
+            <div id="showcase" class="col-md-3">
+                <div id="showcase" class="thumbnail">
                     <img src="assets/ford.png" alt="">
                     <br>
                     <div class="caption">
@@ -79,8 +129,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
-                <div class="thumbnail">
+            <div  class="col-md-3">
+                <div id="showcase" class="thumbnail">
                     <img src="assets/suzuki.png" alt="">
                     <br>
                     <div class="caption">
@@ -89,7 +139,7 @@
                 </div>
             </div>
             <div class="col-md-3">
-                <div class="thumbnail">
+                <div id="showcase" class="thumbnail">
                     <img src="assets/porsche.png" alt="">
                     <br>
                     <div class="caption">
@@ -98,7 +148,7 @@
                 </div>
             </div>
             <div class="col-md-3">
-                <div class="thumbnail">
+                <div id="showcase" class="thumbnail">
                     <img src="assets/lambo.png" alt="">
                     <br>
                     <div class="caption">
@@ -107,7 +157,7 @@
                 </div>
             </div>
             <div class="col-md-3">
-                <div class="thumbnail">
+                <div id="showcase" class="thumbnail">
                     <img src="assets/hyundai.png" alt="">
                     <br>
                     <div class="caption">
@@ -116,7 +166,7 @@
                 </div>
             </div>
             <div class="col-md-3">
-                <div class="thumbnail">
+                <div id="showcase" class="thumbnail">
                     <img src="assets/mclaren.png" alt="">
                     <br>
                     <div class="caption">
@@ -125,7 +175,7 @@
                 </div>
             </div>
             <div class="col-md-3">
-                <div class="thumbnail">
+                <div id="showcase" class="thumbnail">
                     <img src="assets/tata.png" alt="">
                     <br>
                     <div class="caption">
@@ -134,7 +184,7 @@
                 </div>
             </div>
             <div class="col-md-3">
-                <div class="thumbnail">
+                <div id="showcase" class="thumbnail">
                     <img src="assets/royce.png" alt="">
                     <br>
                     <div class="caption">
@@ -143,7 +193,7 @@
                 </div>
             </div>
             <div class="col-md-3">
-                <div class="thumbnail">
+                <div id="showcase" class="thumbnail">
                     <img src="assets/landrover.png" alt="">
                     <br>
                     <div class="caption">
@@ -152,7 +202,7 @@
                 </div>
             </div>
             <div class="col-md-3">
-                <div class="thumbnail">
+                <div id="showcase" class="thumbnail">
                     <img src="assets/mercedes.png" alt="">
                     <br>
                     <div class="caption">
@@ -162,6 +212,7 @@
             </div>
         </div>
     </div>
+    <script src="../opinion.js"></script>
 </body>
 </html>
 
