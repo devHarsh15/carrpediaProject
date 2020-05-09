@@ -125,6 +125,23 @@ section {
     align-items: center;
 }
 
+#gimg {
+    height: 280px;
+    width: auto;
+}
+
+#gimg-container {
+    border: 2px solid rgba(141, 141, 141, 0.548);
+}
+
+#gimg-container:hover {
+    box-shadow: 3px 4px 6px 2px rgba(0, 0, 255, .2);
+    transform: scale(1.02);
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    transition-property: all;
+}
+
 #submit {
     width: 200px;
     outline: none;

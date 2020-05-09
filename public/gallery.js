@@ -18,7 +18,7 @@ function addImages(images){
 }
 
 function addImg(img){
-    var newImage = $("<div class='col-md-4'><div class='thumbnail'><img src='"+img.image+"'></div></div>");
+    var newImage = $("<div class='col-md-4'><div id='gimg-container' class='thumbnail'><img id='gimg' class='img-responsive' src='"+img.image+"'></div></div>");
     $(".row").append(newImage);
 }
 

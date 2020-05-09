@@ -102,6 +102,6 @@ app.get("/gallery", function(req,res){
     res.sendFile("gallery.html", { root : __dirname + "/views"});
 });
 
-app.listen(process.env.PORT, process.env.IP, function(){
+app.listen(3000, function(){
     console.log("carPedia Started!!")
 })
